@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-canvas text-ink font-body antialiased;
+}
+
+h1, h2, h3 {
+  @apply font-display text-navy;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center bg-navy text-white font-medium px-5 py-2.5 rounded-sm hover:bg-navy-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center border border-navy-100 text-navy font-medium px-5 py-2.5 rounded-sm hover:bg-navy-50 transition-colors;
+}
+
+.field-label {
+  @apply block text-sm font-medium text-navy-700 mb-1;
+}
+
+.field-input {
+  @apply w-full border border-navy-100 bg-white px-3 py-2 rounded-sm focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent;
+}
+
+.panel {
+  @apply bg-white border-l-4 border-gold px-6 py-5;
+}
+
+.panel-admin {
+  @apply bg-white border-l-4 border-plum px-6 py-5;
+}
